@@ -1,0 +1,1791 @@
+01:51:07.920 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:51:08.689 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:08.977 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"username":"john.doe@example.com","password":"Aj_H|u4{p85v\/!{3+kp"}
+
+01:51:09.343 [main] DEBUG com.intuit.karate - response time in milliseconds: 364
+1 < 200
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:08 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZUBleGFtcGxlLmNvbSIsImlzcyI6IlNpdGFzIiwiaWF0IjoxNzE2NzA2MjY4LCJleHAiOjE3MTY3MDcxNjh9.C2a_QaS3JfjfyeQLjI4167TlOx28jBOTU3w7pVJE-wM"}
+
+01:51:09.364 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:09.368 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"username":"john.doe@example.com","password":"password"}
+
+01:51:09.561 [main] DEBUG com.intuit.karate - response time in milliseconds: 192
+1 < 401
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:08 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 29
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Login failed: Bad credentials
+
+01:51:10.611 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:51:10.619 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:10.622 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 314
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:10.766 [main] DEBUG com.intuit.karate - response time in milliseconds: 144
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:09 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:10.783 [main] ERROR com.intuit.karate - classpath:udea/register/age.feature:27
+Then match response[*].defaultMessage contains 'Birthdate must not be empty'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/age.feature:27
+01:51:10.804 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:10.806 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 313
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"1234","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"2010-10-15"}
+
+01:51:10.918 [main] DEBUG com.intuit.karate - response time in milliseconds: 110
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:10 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:10.923 [main] ERROR com.intuit.karate - classpath:udea/register/age.feature:51
+Then match response[*].defaultMessage contains 'Birthdate must be at least 18 years old'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/age.feature:51
+01:51:10.930 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:10.933 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 313
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"1234","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"2030-10-15"}
+
+01:51:11.043 [main] DEBUG com.intuit.karate - response time in milliseconds: 109
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:10 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:11.047 [main] ERROR com.intuit.karate - classpath:udea/register/age.feature:74
+Then match response[*].defaultMessage contains 'Birthdate must be at most the current date minus 18 years'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/age.feature:74
+01:51:11.054 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:11.056 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:11.164 [main] DEBUG com.intuit.karate - response time in milliseconds: 108
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:10 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:11.297 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:11.307 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 289
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:11.510 [main] DEBUG com.intuit.karate - response time in milliseconds: 201
+1 < 201
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:10 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 28
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+User registered successfully
+
+01:51:11.515 [main] ERROR com.intuit.karate - classpath:udea/register/email.feature:26
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 201, url: https://codefact.udea.edu.co/modulo-01/public/api/auth/register, response: 
+User registered successfully
+classpath:udea/register/email.feature:26
+01:51:11.521 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:11.523 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 302
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:11.630 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:10 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Email.personRegistrationDTO.mail","Email.mail","Email.java.lang.String","Email"],"arguments":[{"codes":["personRegistrationDTO.mail","mail"],"arguments":null,"defaultMessage":"mail","code":"mail"},[],{"codes":[".*"],"defaultMessage":".*","arguments":null}],"defaultMessage":"Email should be valid","objectName":"personRegistrationDTO","field":"mail","rejectedValue":"esteban.salas","bindingFailure":false,"code":"Email"}]
+
+01:51:11.637 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:11.639 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:11.745 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:10 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:11.804 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:11.806 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 307
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:11.911 [main] DEBUG com.intuit.karate - response time in milliseconds: 104
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:11 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["NotBlank.personRegistrationDTO.firstname","NotBlank.firstname","NotBlank.java.lang.String","NotBlank"],"arguments":[{"codes":["personRegistrationDTO.firstname","firstname"],"arguments":null,"defaultMessage":"firstname","code":"firstname"}],"defaultMessage":"First name is required","objectName":"personRegistrationDTO","field":"firstname","rejectedValue":"","bindingFailure":false,"code":"NotBlank"}]
+
+01:51:11.917 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:11.919 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 311
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"1234","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:12.026 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:11 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:12.029 [main] ERROR com.intuit.karate - classpath:udea/register/firstName.feature:51
+Then match response[*].defaultMessage contains 'First name must contain only letters'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/firstName.feature:51
+01:51:12.034 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:12.036 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:12.143 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:11 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:12.197 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:12.199 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 303
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"","idType":"passport","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:12.308 [main] DEBUG com.intuit.karate - response time in milliseconds: 108
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:11 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.cc","Pattern.cc","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.cc","cc"],"arguments":null,"defaultMessage":"cc","code":"cc"},[],{"codes":["^[0-9]{10}$"],"defaultMessage":"^[0-9]{10}$","arguments":null}],"defaultMessage":"CC must be 10 digits","objectName":"personRegistrationDTO","field":"cc","rejectedValue":"","bindingFailure":false,"code":"Pattern"},{"codes":["NotBlank.personRegistrationDTO.cc","NotBlank.cc","NotBlank.java.lang.String","NotBlank"],"arguments":[{"codes":["personRegistrationDTO.cc","cc"],"arguments":null,"defaultMessage":"cc","code":"cc"}],"defaultMessage":"CC (Cédula) is required","objectName":"personRegistrationDTO","field":"cc","rejectedValue":"","bindingFailure":false,"code":"NotBlank"}]
+
+01:51:12.314 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:12.317 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 307
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111","idType":"passport","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:12.423 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:11 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.cc","Pattern.cc","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.cc","cc"],"arguments":null,"defaultMessage":"cc","code":"cc"},[],{"codes":["^[0-9]{10}$"],"defaultMessage":"^[0-9]{10}$","arguments":null}],"defaultMessage":"CC must be 10 digits","objectName":"personRegistrationDTO","field":"cc","rejectedValue":"1111","bindingFailure":false,"code":"Pattern"}]
+
+01:51:12.429 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:12.431 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 314
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"11111111111","idType":"passport","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:12.538 [main] DEBUG com.intuit.karate - response time in milliseconds: 105
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:11 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.cc","Pattern.cc","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.cc","cc"],"arguments":null,"defaultMessage":"cc","code":"cc"},[],{"codes":["^[0-9]{10}$"],"defaultMessage":"^[0-9]{10}$","arguments":null}],"defaultMessage":"CC must be 10 digits","objectName":"personRegistrationDTO","field":"cc","rejectedValue":"11111111111","bindingFailure":false,"code":"Pattern"}]
+
+01:51:12.543 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:12.545 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 303
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"passport","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:12.653 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:11 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:12.699 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:12.701 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 305
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:12.806 [main] DEBUG com.intuit.karate - response time in milliseconds: 105
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:11 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["NotBlank.personRegistrationDTO.idType","NotBlank.idType","NotBlank.java.lang.String","NotBlank"],"arguments":[{"codes":["personRegistrationDTO.idType","idType"],"arguments":null,"defaultMessage":"idType","code":"idType"}],"defaultMessage":"ID type is required","objectName":"personRegistrationDTO","field":"idType","rejectedValue":"","bindingFailure":false,"code":"NotBlank"}]
+
+01:51:12.811 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:12.812 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 309
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"hola","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:12.920 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:12 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:12.923 [main] ERROR com.intuit.karate - classpath:udea/register/idType.feature:50
+Then match response[*].defaultMessage contains 'ID type must be cedula or pasaporte'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/idType.feature:50
+01:51:12.928 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:12.929 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:13.036 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:12 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:13.077 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:13.079 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 309
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:13.186 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:12 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["NotBlank.personRegistrationDTO.lastname","NotBlank.lastname","NotBlank.java.lang.String","NotBlank"],"arguments":[{"codes":["personRegistrationDTO.lastname","lastname"],"arguments":null,"defaultMessage":"lastname","code":"lastname"}],"defaultMessage":"Last name is required","objectName":"personRegistrationDTO","field":"lastname","rejectedValue":"","bindingFailure":false,"code":"NotBlank"}]
+
+01:51:13.190 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:13.192 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 313
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"1234","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:13.305 [main] DEBUG com.intuit.karate - response time in milliseconds: 112
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:12 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:13.306 [main] ERROR com.intuit.karate - classpath:udea/register/lastName.feature:51
+Then match response[*].defaultMessage contains 'Last name must contain only letters'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/lastName.feature:51
+01:51:13.311 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:13.313 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:13.420 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:12 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:13.461 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:13.463 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 301
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"passwor","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:13.570 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:12 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.password","Pattern.password","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.password","password"],"arguments":null,"defaultMessage":"password","code":"password"},[],{"codes":["^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?])(?!.*[#='$;%]).{8,}$"],"defaultMessage":"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?])(?!.*[#='$;%]).{8,}$","arguments":null}],"defaultMessage":"Password must contain at least one digit, one lowercase letter, one uppercase letter, one symbol, and cannot contain #='$;%","objectName":"personRegistrationDTO","field":"password","rejectedValue":"passwor","bindingFailure":false,"code":"Pattern"},{"codes":["Size.personRegistrationDTO.password","Size.password","Size.java.lang.String","Size"],"arguments":[{"codes":["personRegistrationDTO.password","password"],"arguments":null,"defaultMessage":"password","code":"password"},2147483647,8],"defaultMessage":"Password must be at least 8 characters long","objectName":"personRegistrationDTO","field":"password","rejectedValue":"passwor","bindingFailure":false,"code":"Size"}]
+
+01:51:13.575 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:13.576 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 302
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"password","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:13.682 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:12 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.password","Pattern.password","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.password","password"],"arguments":null,"defaultMessage":"password","code":"password"},[],{"codes":["^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?])(?!.*[#='$;%]).{8,}$"],"defaultMessage":"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?])(?!.*[#='$;%]).{8,}$","arguments":null}],"defaultMessage":"Password must contain at least one digit, one lowercase letter, one uppercase letter, one symbol, and cannot contain #='$;%","objectName":"personRegistrationDTO","field":"password","rejectedValue":"password","bindingFailure":false,"code":"Pattern"}]
+
+01:51:13.687 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:13.688 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:13.796 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:12 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:14.066 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:51:14.072 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:14.074 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"username":"john.doe@example.com","password":"Aj_H|u4{p85v\/!{3+kp"}
+
+01:51:14.261 [main] DEBUG com.intuit.karate - response time in milliseconds: 186
+1 < 200
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:13 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZUBleGFtcGxlLmNvbSIsImlzcyI6IlNpdGFzIiwiaWF0IjoxNzE2NzA2MjczLCJleHAiOjE3MTY3MDcxNzN9.Zf_S2FPOs57SJcDHz5g2ymggejMLtpZRhh_rbb4LTmM"}
+
+01:51:14.265 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:14.266 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"username":"john.doe@example.com","password":"password"}
+
+01:51:14.454 [main] DEBUG com.intuit.karate - response time in milliseconds: 187
+1 < 401
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:13 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 29
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Login failed: Bad credentials
+
+01:51:14.476 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:14.477 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 314
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:14.583 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:13 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:14.585 [main] ERROR com.intuit.karate - classpath:udea/register/age.feature:27
+Then match response[*].defaultMessage contains 'Birthdate must not be empty'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/age.feature:27
+01:51:14.590 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:14.592 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 313
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"1234","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"2010-10-15"}
+
+01:51:14.701 [main] DEBUG com.intuit.karate - response time in milliseconds: 109
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:13 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:14.702 [main] ERROR com.intuit.karate - classpath:udea/register/age.feature:51
+Then match response[*].defaultMessage contains 'Birthdate must be at least 18 years old'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/age.feature:51
+01:51:14.706 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:14.708 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 313
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"1234","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"2030-10-15"}
+
+01:51:14.814 [main] DEBUG com.intuit.karate - response time in milliseconds: 105
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:13 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:14.815 [main] ERROR com.intuit.karate - classpath:udea/register/age.feature:74
+Then match response[*].defaultMessage contains 'Birthdate must be at most the current date minus 18 years'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/age.feature:74
+01:51:14.819 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:14.820 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:14.928 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:14 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:14.962 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:14.963 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 289
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:15.169 [main] DEBUG com.intuit.karate - response time in milliseconds: 204
+1 < 201
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:14 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 28
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+User registered successfully
+
+01:51:15.169 [main] ERROR com.intuit.karate - classpath:udea/register/email.feature:26
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 204, url: https://codefact.udea.edu.co/modulo-01/public/api/auth/register, response: 
+User registered successfully
+classpath:udea/register/email.feature:26
+01:51:15.173 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:15.174 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 302
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:15.279 [main] DEBUG com.intuit.karate - response time in milliseconds: 105
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:14 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Email.personRegistrationDTO.mail","Email.mail","Email.java.lang.String","Email"],"arguments":[{"codes":["personRegistrationDTO.mail","mail"],"arguments":null,"defaultMessage":"mail","code":"mail"},[],{"codes":[".*"],"defaultMessage":".*","arguments":null}],"defaultMessage":"Email should be valid","objectName":"personRegistrationDTO","field":"mail","rejectedValue":"esteban.salas","bindingFailure":false,"code":"Email"}]
+
+01:51:15.283 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:15.285 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:15.391 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:14 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:15.423 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:15.425 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 307
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:15.531 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:14 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["NotBlank.personRegistrationDTO.firstname","NotBlank.firstname","NotBlank.java.lang.String","NotBlank"],"arguments":[{"codes":["personRegistrationDTO.firstname","firstname"],"arguments":null,"defaultMessage":"firstname","code":"firstname"}],"defaultMessage":"First name is required","objectName":"personRegistrationDTO","field":"firstname","rejectedValue":"","bindingFailure":false,"code":"NotBlank"}]
+
+01:51:15.535 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:15.537 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 311
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"1234","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:15.644 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:14 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:15.645 [main] ERROR com.intuit.karate - classpath:udea/register/firstName.feature:51
+Then match response[*].defaultMessage contains 'First name must contain only letters'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/firstName.feature:51
+01:51:15.649 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:15.650 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:15.756 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:14 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:15.786 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:15.787 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 303
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"","idType":"passport","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:15.894 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.cc","Pattern.cc","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.cc","cc"],"arguments":null,"defaultMessage":"cc","code":"cc"},[],{"codes":["^[0-9]{10}$"],"defaultMessage":"^[0-9]{10}$","arguments":null}],"defaultMessage":"CC must be 10 digits","objectName":"personRegistrationDTO","field":"cc","rejectedValue":"","bindingFailure":false,"code":"Pattern"},{"codes":["NotBlank.personRegistrationDTO.cc","NotBlank.cc","NotBlank.java.lang.String","NotBlank"],"arguments":[{"codes":["personRegistrationDTO.cc","cc"],"arguments":null,"defaultMessage":"cc","code":"cc"}],"defaultMessage":"CC (Cédula) is required","objectName":"personRegistrationDTO","field":"cc","rejectedValue":"","bindingFailure":false,"code":"NotBlank"}]
+
+01:51:15.898 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:15.900 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 307
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111","idType":"passport","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:16.006 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.cc","Pattern.cc","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.cc","cc"],"arguments":null,"defaultMessage":"cc","code":"cc"},[],{"codes":["^[0-9]{10}$"],"defaultMessage":"^[0-9]{10}$","arguments":null}],"defaultMessage":"CC must be 10 digits","objectName":"personRegistrationDTO","field":"cc","rejectedValue":"1111","bindingFailure":false,"code":"Pattern"}]
+
+01:51:16.010 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:16.012 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 314
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"11111111111","idType":"passport","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:16.118 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.cc","Pattern.cc","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.cc","cc"],"arguments":null,"defaultMessage":"cc","code":"cc"},[],{"codes":["^[0-9]{10}$"],"defaultMessage":"^[0-9]{10}$","arguments":null}],"defaultMessage":"CC must be 10 digits","objectName":"personRegistrationDTO","field":"cc","rejectedValue":"11111111111","bindingFailure":false,"code":"Pattern"}]
+
+01:51:16.122 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:16.123 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 303
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"passport","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:16.230 [main] DEBUG com.intuit.karate - response time in milliseconds: 107
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:15 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:16.264 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:16.266 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 305
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:16.371 [main] DEBUG com.intuit.karate - response time in milliseconds: 105
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["NotBlank.personRegistrationDTO.idType","NotBlank.idType","NotBlank.java.lang.String","NotBlank"],"arguments":[{"codes":["personRegistrationDTO.idType","idType"],"arguments":null,"defaultMessage":"idType","code":"idType"}],"defaultMessage":"ID type is required","objectName":"personRegistrationDTO","field":"idType","rejectedValue":"","bindingFailure":false,"code":"NotBlank"}]
+
+01:51:16.375 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:16.376 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 309
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"hola","firstname":"Esteban","lastname":"Salas","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:16.483 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:15 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:16.484 [main] ERROR com.intuit.karate - classpath:udea/register/idType.feature:50
+Then match response[*].defaultMessage contains 'ID type must be cedula or pasaporte'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/idType.feature:50
+01:51:16.489 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:16.491 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:16.596 [main] DEBUG com.intuit.karate - response time in milliseconds: 105
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:15 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:16.623 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:16.624 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 309
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:16.730 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["NotBlank.personRegistrationDTO.lastname","NotBlank.lastname","NotBlank.java.lang.String","NotBlank"],"arguments":[{"codes":["personRegistrationDTO.lastname","lastname"],"arguments":null,"defaultMessage":"lastname","code":"lastname"}],"defaultMessage":"Last name is required","objectName":"personRegistrationDTO","field":"lastname","rejectedValue":"","bindingFailure":false,"code":"NotBlank"}]
+
+01:51:16.734 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:16.736 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 313
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"1234","password":"Aj_H|u4{p85v\/!{3+kp","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:16.842 [main] DEBUG com.intuit.karate - response time in milliseconds: 105
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:15 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:16.844 [main] ERROR com.intuit.karate - classpath:udea/register/lastName.feature:51
+Then match response[*].defaultMessage contains 'Last name must contain only letters'
+js failed:
+>>>>
+01: response[*].defaultMessage
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/lastName.feature:51
+01:51:16.850 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:16.851 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:16.960 [main] DEBUG com.intuit.karate - response time in milliseconds: 109
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:16 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+01:51:16.981 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:16.983 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 301
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"passwor","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:17.089 [main] DEBUG com.intuit.karate - response time in milliseconds: 106
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:16 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.password","Pattern.password","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.password","password"],"arguments":null,"defaultMessage":"password","code":"password"},[],{"codes":["^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?])(?!.*[#='$;%]).{8,}$"],"defaultMessage":"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?])(?!.*[#='$;%]).{8,}$","arguments":null}],"defaultMessage":"Password must contain at least one digit, one lowercase letter, one uppercase letter, one symbol, and cannot contain #='$;%","objectName":"personRegistrationDTO","field":"password","rejectedValue":"passwor","bindingFailure":false,"code":"Pattern"},{"codes":["Size.personRegistrationDTO.password","Size.password","Size.java.lang.String","Size"],"arguments":[{"codes":["personRegistrationDTO.password","password"],"arguments":null,"defaultMessage":"password","code":"password"},2147483647,8],"defaultMessage":"Password must be at least 8 characters long","objectName":"personRegistrationDTO","field":"password","rejectedValue":"passwor","bindingFailure":false,"code":"Size"}]
+
+01:51:17.094 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:17.095 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 302
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"password","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:17.199 [main] DEBUG com.intuit.karate - response time in milliseconds: 104
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:16 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+[{"codes":["Pattern.personRegistrationDTO.password","Pattern.password","Pattern.java.lang.String","Pattern"],"arguments":[{"codes":["personRegistrationDTO.password","password"],"arguments":null,"defaultMessage":"password","code":"password"},[],{"codes":["^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?])(?!.*[#='$;%]).{8,}$"],"defaultMessage":"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?])(?!.*[#='$;%]).{8,}$","arguments":null}],"defaultMessage":"Password must contain at least one digit, one lowercase letter, one uppercase letter, one symbol, and cannot contain #='$;%","objectName":"personRegistrationDTO","field":"password","rejectedValue":"password","bindingFailure":false,"code":"Pattern"}]
+
+01:51:17.202 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:51:17.203 [main] DEBUG com.intuit.karate - request:
+1 > POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 304
+1 > Host: codefact.udea.edu.co
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 > Accept-Encoding: gzip,deflate
+{"cc":"1111111111","idType":"pasaporte","firstname":"Esteban","lastname":"Salas","password":"Password1!","mail":"esteban.salas@example.com","country":"USA","province":"California","city":"San Francisco","residence":"123 Main St, Apt 4B","phone":"123-456-7890","role":"ROLE_USER","birthdate":"1985-10-15"}
+
+01:51:17.312 [main] DEBUG com.intuit.karate - response time in milliseconds: 109
+1 < 400
+1 < Server: nginx/1.14.1
+1 < Date: Sun, 26 May 2024 06:51:16 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 79
+1 < Connection: keep-alive
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+

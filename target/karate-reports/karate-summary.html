@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_summary",{distinct_id:"e2fb7502-32a2-4c10-aed1-dc25bc8df5ad",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Karate Summary Report</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">5</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Features</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-05-26 01:51:17 a. m.</div>
+  </div>
+</div>
+
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <a href="karate-timeline.html">Timeline</a>
+        </div>
+        <table class="features-table table table-sm">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Title</th>
+              <th class="num">Passed</th>
+              <th class="num">Failed</th>
+              <th class="num">Scenarios</th>
+              <th class="num">Time (ms)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="passed">
+              <td>
+                <a href="udea.login.login.html">udea/login/login.feature</a>
+              </td>
+              <td>Iniciar sesión con correo y contraseña</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">378</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="udea.register.age.html">udea/register/age.feature</a>
+              </td>
+              <td>Registro con edad correcta</td>
+              <td class="num">1</td>
+              <td class="num">3</td>
+              <td class="num">4</td>
+              <td class="num">438</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="udea.register.email.html">udea/register/email.feature</a>
+              </td>
+              <td>Registro con email correcto</td>
+              <td class="num">2</td>
+              <td class="num">1</td>
+              <td class="num">3</td>
+              <td class="num">422</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="udea.register.firstName.html">udea/register/firstName.feature</a>
+              </td>
+              <td>Registro con nombre correcto</td>
+              <td class="num">2</td>
+              <td class="num">1</td>
+              <td class="num">3</td>
+              <td class="num">326</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="udea.register.id.html">udea/register/id.feature</a>
+              </td>
+              <td>Registro con documento correcto</td>
+              <td class="num">4</td>
+              <td class="num">0</td>
+              <td class="num">4</td>
+              <td class="num">433</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="udea.register.idType.html">udea/register/idType.feature</a>
+              </td>
+              <td>Registro con tipo de documento correcto</td>
+              <td class="num">2</td>
+              <td class="num">1</td>
+              <td class="num">3</td>
+              <td class="num">323</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="udea.register.lastName.html">udea/register/lastName.feature</a>
+              </td>
+              <td>Registro con apellido correcto</td>
+              <td class="num">2</td>
+              <td class="num">1</td>
+              <td class="num">3</td>
+              <td class="num">326</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="udea.register.password.html">udea/register/password.feature</a>
+              </td>
+              <td>Registro con contraseña segura</td>
+              <td class="num">3</td>
+              <td class="num">0</td>
+              <td class="num">3</td>
+              <td class="num">325</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+
