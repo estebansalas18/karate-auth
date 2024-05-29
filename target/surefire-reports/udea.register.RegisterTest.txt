@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: udea.register.RegisterTest
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 3.57 s <<< FAILURE! - in udea.register.RegisterTest
-udea/register/age.[1:5] Fecha de nacimiento vacia  Time elapsed: 0.182 s  <<< FAILURE!
+Tests run: 15, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 2.614 s <<< FAILURE! - in udea.register.RegisterTest
+udea/register/register.[5:101] Tipo de identificación "hola"  Time elapsed: 0.144 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 js failed:
 >>>>
@@ -20,7 +20,7 @@ response[*].defaultMessage
 - com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
 - com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
 
-classpath:udea/register/age.feature:27
+classpath:udea/register/register.feature:123
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
 	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
@@ -127,7 +127,7 @@ classpath:udea/register/age.feature:27
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-udea/register/age.[2:29] Fecha de nacimiento invalida - menor a 18 años  Time elapsed: 0.126 s  <<< FAILURE!
+udea/register/register.[7:149] Nombre con caracteres especiales  Time elapsed: 0.12 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 js failed:
 >>>>
@@ -145,7 +145,7 @@ response[*].defaultMessage
 - com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
 - com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
 
-classpath:udea/register/age.feature:51
+classpath:udea/register/register.feature:171
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
 	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
@@ -252,7 +252,7 @@ classpath:udea/register/age.feature:51
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-udea/register/age.[3:52] Fecha de nacimiento invalida - mayor a la fecha actual  Time elapsed: 0.121 s  <<< FAILURE!
+udea/register/register.[9:197] Apellido con caracteres especiales  Time elapsed: 0.12 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 js failed:
 >>>>
@@ -270,7 +270,7 @@ response[*].defaultMessage
 - com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
 - com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
 
-classpath:udea/register/age.feature:74
+classpath:udea/register/register.feature:219
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
 	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
@@ -377,11 +377,11 @@ classpath:udea/register/age.feature:74
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-udea/register/email.[1:5] Email vacio  Time elapsed: 0.224 s  <<< FAILURE!
+udea/register/register.[10:221] Email vacio  Time elapsed: 0.211 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
-status code was: 201, expected: 400, response time in milliseconds: 201, url: https://codefact.udea.edu.co/modulo-01/public/api/auth/register, response: 
+status code was: 201, expected: 400, response time in milliseconds: 200, url: https://codefact.udea.edu.co/modulo-01/public/api/auth/register, response: 
 User registered successfully
-classpath:udea/register/email.feature:26
+classpath:udea/register/register.feature:242
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
 	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
@@ -488,7 +488,7 @@ classpath:udea/register/email.feature:26
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-udea/register/firstName.[2:29] Nombre con caracteres especiales  Time elapsed: 0.114 s  <<< FAILURE!
+udea/register/register.[12:268] Fecha de nacimiento vacia  Time elapsed: 0.12 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 js failed:
 >>>>
@@ -506,7 +506,7 @@ response[*].defaultMessage
 - com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
 - com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
 
-classpath:udea/register/firstName.feature:51
+classpath:udea/register/register.feature:290
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
 	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
@@ -613,7 +613,7 @@ classpath:udea/register/firstName.feature:51
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-udea/register/idType.[2:28] Tipo de identificación "hola"  Time elapsed: 0.115 s  <<< FAILURE!
+udea/register/register.[13:292] Fecha de nacimiento invalida - menor a 18 años  Time elapsed: 0.121 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 js failed:
 >>>>
@@ -631,7 +631,7 @@ response[*].defaultMessage
 - com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
 - com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
 
-classpath:udea/register/idType.feature:50
+classpath:udea/register/register.feature:314
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
 	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
@@ -738,7 +738,7 @@ classpath:udea/register/idType.feature:50
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-udea/register/lastName.[2:29] Apellido con caracteres especiales  Time elapsed: 0.119 s  <<< FAILURE!
+udea/register/register.[14:316] Fecha de nacimiento invalida - mayor a la fecha actual  Time elapsed: 0.118 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 js failed:
 >>>>
@@ -756,7 +756,7 @@ response[*].defaultMessage
 - com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
 - com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
 
-classpath:udea/register/lastName.feature:51
+classpath:udea/register/register.feature:338
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
 	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)

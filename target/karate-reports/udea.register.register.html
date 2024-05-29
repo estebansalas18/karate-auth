@@ -1,0 +1,3819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"e2fb7502-32a2-4c10-aed1-dc25bc8df5ad",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>udea.register.register</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">8</div>
+      <div id="nav-fail" class="bg-danger">7</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-05-28 07:29:10 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>Identificación vacia</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:30]"><span>[2:30]</span> <span>Identificación menor a 4 caracteres</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:54]"><span>[3:54]</span> <span>Identificación mayor a 10 caracteres</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:78]"><span>[4:78]</span> <span>Tipo de identificación vacio</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:101]"><span>[5:101]</span> <span>Tipo de identificación &quot;hola&quot;</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:125]"><span>[6:125]</span> <span>Nombre vacio</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[7:149]"><span>[7:149]</span> <span>Nombre con caracteres especiales</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:173]"><span>[8:173]</span> <span>Apellido vacio</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[9:197]"><span>[9:197]</span> <span>Apellido con caracteres especiales</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[10:221]"><span>[10:221]</span> <span>Email vacio</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[11:245]"><span>[11:245]</span> <span>Email sin dominio @dominio.com</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[12:268]"><span>[12:268]</span> <span>Fecha de nacimiento vacia</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[13:292]"><span>[13:292]</span> <span>Fecha de nacimiento invalida - menor a 18 años</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[14:316]"><span>[14:316]</span> <span>Fecha de nacimiento invalida - mayor a la fecha actual</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[15:340]"><span>[15:340]</span> <span>Todos los datos diligenciados correctamente</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">udea/register/register.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Registro de usuario en la aplicación</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">Identificación vacia</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>112</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:5]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:5]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:08.264 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7">{
+    &quot;cc&quot;: &quot;&quot;,
+    &quot;idType&quot;: &quot;pasaporte&quot;,
+    &quot;firstname&quot;: &quot;Esteban&quot;,
+    &quot;lastname&quot;: &quot;Salas&quot;,
+    &quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+    &quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+    &quot;country&quot;: &quot;USA&quot;,
+    &quot;province&quot;: &quot;California&quot;,
+    &quot;city&quot;: &quot;San Francisco&quot;,
+    &quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+    &quot;phone&quot;: &quot;123-456-7890&quot;,
+    &quot;role&quot;: &quot;ROLE_USER&quot;,
+    &quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">111</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">19:29:08.265 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 304
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:08.375 response time in milliseconds: 110
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+[{&quot;codes&quot;:[&quot;Pattern.personRegistrationDTO.cc&quot;,&quot;Pattern.cc&quot;,&quot;Pattern.java.lang.String&quot;,&quot;Pattern&quot;],&quot;arguments&quot;:[{&quot;codes&quot;:[&quot;personRegistrationDTO.cc&quot;,&quot;cc&quot;],&quot;arguments&quot;:null,&quot;defaultMessage&quot;:&quot;cc&quot;,&quot;code&quot;:&quot;cc&quot;},[],{&quot;codes&quot;:[&quot;^[0-9]{10}$&quot;],&quot;defaultMessage&quot;:&quot;^[0-9]{10}$&quot;,&quot;arguments&quot;:null}],&quot;defaultMessage&quot;:&quot;CC must be 10 digits&quot;,&quot;objectName&quot;:&quot;personRegistrationDTO&quot;,&quot;field&quot;:&quot;cc&quot;,&quot;rejectedValue&quot;:&quot;&quot;,&quot;bindingFailure&quot;:false,&quot;code&quot;:&quot;Pattern&quot;},{&quot;codes&quot;:[&quot;NotBlank.personRegistrationDTO.cc&quot;,&quot;NotBlank.cc&quot;,&quot;NotBlank.java.lang.String&quot;,&quot;NotBlank&quot;],&quot;arguments&quot;:[{&quot;codes&quot;:[&quot;personRegistrationDTO.cc&quot;,&quot;cc&quot;],&quot;arguments&quot;:null,&quot;defaultMessage&quot;:&quot;cc&quot;,&quot;code&quot;:&quot;cc&quot;}],&quot;defaultMessage&quot;:&quot;CC (Cédula) is required&quot;,&quot;objectName&quot;:&quot;personRegistrationDTO&quot;,&quot;field&quot;:&quot;cc&quot;,&quot;rejectedValue&quot;:&quot;&quot;,&quot;bindingFailure&quot;:false,&quot;code&quot;:&quot;NotBlank&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;CC must be 10 digits&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;CC (Cédula) is required&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:30]</span>
+                <span class="scenario-name">Identificación menor a 4 caracteres</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>113</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:08.380 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.32">{
+    &quot;cc&quot;: &quot;1111&quot;,
+    &quot;idType&quot;: &quot;pasaporte&quot;,
+    &quot;firstname&quot;: &quot;Esteban&quot;,
+    &quot;lastname&quot;: &quot;Salas&quot;,
+    &quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+    &quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+    &quot;country&quot;: &quot;USA&quot;,
+    &quot;province&quot;: &quot;California&quot;,
+    &quot;city&quot;: &quot;San Francisco&quot;,
+    &quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+    &quot;phone&quot;: &quot;123-456-7890&quot;,
+    &quot;role&quot;: &quot;ROLE_USER&quot;,
+    &quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">113</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50">19:29:08.383 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 308
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:08.492 response time in milliseconds: 108
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+[{&quot;codes&quot;:[&quot;Pattern.personRegistrationDTO.cc&quot;,&quot;Pattern.cc&quot;,&quot;Pattern.java.lang.String&quot;,&quot;Pattern&quot;],&quot;arguments&quot;:[{&quot;codes&quot;:[&quot;personRegistrationDTO.cc&quot;,&quot;cc&quot;],&quot;arguments&quot;:null,&quot;defaultMessage&quot;:&quot;cc&quot;,&quot;code&quot;:&quot;cc&quot;},[],{&quot;codes&quot;:[&quot;^[0-9]{10}$&quot;],&quot;defaultMessage&quot;:&quot;^[0-9]{10}$&quot;,&quot;arguments&quot;:null}],&quot;defaultMessage&quot;:&quot;CC must be 10 digits&quot;,&quot;objectName&quot;:&quot;personRegistrationDTO&quot;,&quot;field&quot;:&quot;cc&quot;,&quot;rejectedValue&quot;:&quot;1111&quot;,&quot;bindingFailure&quot;:false,&quot;code&quot;:&quot;Pattern&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;CC must be 10 digits&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:54]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:54]</span>
+                <span class="scenario-name">Identificación mayor a 10 caracteres</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>111</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:54]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:54]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:08.500 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.56">{
+    &quot;cc&quot;: &quot;11111111111&quot;,
+    &quot;idType&quot;: &quot;pasaporte&quot;,
+    &quot;firstname&quot;: &quot;Esteban&quot;,
+    &quot;lastname&quot;: &quot;Salas&quot;,
+    &quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+    &quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+    &quot;country&quot;: &quot;USA&quot;,
+    &quot;province&quot;: &quot;California&quot;,
+    &quot;city&quot;: &quot;San Francisco&quot;,
+    &quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+    &quot;phone&quot;: &quot;123-456-7890&quot;,
+    &quot;role&quot;: &quot;ROLE_USER&quot;,
+    &quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">110</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.74">19:29:08.502 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 315
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;11111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:08.610 response time in milliseconds: 107
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+[{&quot;codes&quot;:[&quot;Pattern.personRegistrationDTO.cc&quot;,&quot;Pattern.cc&quot;,&quot;Pattern.java.lang.String&quot;,&quot;Pattern&quot;],&quot;arguments&quot;:[{&quot;codes&quot;:[&quot;personRegistrationDTO.cc&quot;,&quot;cc&quot;],&quot;arguments&quot;:null,&quot;defaultMessage&quot;:&quot;cc&quot;,&quot;code&quot;:&quot;cc&quot;},[],{&quot;codes&quot;:[&quot;^[0-9]{10}$&quot;],&quot;defaultMessage&quot;:&quot;^[0-9]{10}$&quot;,&quot;arguments&quot;:null}],&quot;defaultMessage&quot;:&quot;CC must be 10 digits&quot;,&quot;objectName&quot;:&quot;personRegistrationDTO&quot;,&quot;field&quot;:&quot;cc&quot;,&quot;rejectedValue&quot;:&quot;11111111111&quot;,&quot;bindingFailure&quot;:false,&quot;code&quot;:&quot;Pattern&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;CC must be 10 digits&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:78]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:78]</span>
+                <span class="scenario-name">Tipo de identificación vacio</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>107</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:78]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:78]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:08.614 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.80">{
+  &quot;cc&quot;: &quot;1111111111&quot;,
+  &quot;idType&quot;: &quot;&quot;,
+  &quot;firstname&quot;: &quot;Esteban&quot;,
+  &quot;lastname&quot;: &quot;Salas&quot;,
+  &quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+  &quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+  &quot;country&quot;: &quot;USA&quot;,
+  &quot;province&quot;: &quot;California&quot;,
+  &quot;city&quot;: &quot;San Francisco&quot;,
+  &quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+  &quot;phone&quot;: &quot;123-456-7890&quot;,
+  &quot;role&quot;: &quot;ROLE_USER&quot;,
+  &quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">107</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.98">19:29:08.616 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 305
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:08.722 response time in milliseconds: 105
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+[{&quot;codes&quot;:[&quot;NotBlank.personRegistrationDTO.idType&quot;,&quot;NotBlank.idType&quot;,&quot;NotBlank.java.lang.String&quot;,&quot;NotBlank&quot;],&quot;arguments&quot;:[{&quot;codes&quot;:[&quot;personRegistrationDTO.idType&quot;,&quot;idType&quot;],&quot;arguments&quot;:null,&quot;defaultMessage&quot;:&quot;idType&quot;,&quot;code&quot;:&quot;idType&quot;}],&quot;defaultMessage&quot;:&quot;ID type is required&quot;,&quot;objectName&quot;:&quot;personRegistrationDTO&quot;,&quot;field&quot;:&quot;idType&quot;,&quot;rejectedValue&quot;:&quot;&quot;,&quot;bindingFailure&quot;:false,&quot;code&quot;:&quot;NotBlank&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;ID type is required&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:101]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:101]</span>
+                <span class="scenario-name">Tipo de identificación &quot;hola&quot;</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>113</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:101]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:101]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:08.726 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.103">{
+  &quot;cc&quot;: &quot;1111111111&quot;,
+  &quot;idType&quot;: &quot;hola&quot;,
+  &quot;firstname&quot;: &quot;Esteban&quot;,
+  &quot;lastname&quot;: &quot;Salas&quot;,
+  &quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+  &quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+  &quot;country&quot;: &quot;USA&quot;,
+  &quot;province&quot;: &quot;California&quot;,
+  &quot;city&quot;: &quot;San Francisco&quot;,
+  &quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+  &quot;phone&quot;: &quot;123-456-7890&quot;,
+  &quot;role&quot;: &quot;ROLE_USER&quot;,
+  &quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.121">
+      <div class="step-ref passed">121</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">111</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.121">19:29:08.727 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 309
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;hola&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:08.836 response time in milliseconds: 109
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:08 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.122">
+      <div class="step-ref passed">122</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref failed">123</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;ID type must be cedula or pasaporte&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.123">19:29:08.839 classpath:udea/register/register.feature:123
+Then match response[*].defaultMessage contains &#39;ID type must be cedula or pasaporte&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: response[*].defaultMessage
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/register.feature:123
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:125]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:125]</span>
+                <span class="scenario-name">Nombre vacio</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>110</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:125]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:125]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:08.845 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.127">{
+&quot;cc&quot;: &quot;1111111111&quot;,
+&quot;idType&quot;: &quot;pasaporte&quot;,
+&quot;firstname&quot;: &quot;&quot;,
+&quot;lastname&quot;: &quot;Salas&quot;,
+&quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+&quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+&quot;country&quot;: &quot;USA&quot;,
+&quot;province&quot;: &quot;California&quot;,
+&quot;city&quot;: &quot;San Francisco&quot;,
+&quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+&quot;phone&quot;: &quot;123-456-7890&quot;,
+&quot;role&quot;: &quot;ROLE_USER&quot;,
+&quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.145">
+      <div class="step-ref passed">145</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">109</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.145">19:29:08.848 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 307
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:08.955 response time in milliseconds: 106
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+[{&quot;codes&quot;:[&quot;NotBlank.personRegistrationDTO.firstname&quot;,&quot;NotBlank.firstname&quot;,&quot;NotBlank.java.lang.String&quot;,&quot;NotBlank&quot;],&quot;arguments&quot;:[{&quot;codes&quot;:[&quot;personRegistrationDTO.firstname&quot;,&quot;firstname&quot;],&quot;arguments&quot;:null,&quot;defaultMessage&quot;:&quot;firstname&quot;,&quot;code&quot;:&quot;firstname&quot;}],&quot;defaultMessage&quot;:&quot;First name is required&quot;,&quot;objectName&quot;:&quot;personRegistrationDTO&quot;,&quot;field&quot;:&quot;firstname&quot;,&quot;rejectedValue&quot;:&quot;&quot;,&quot;bindingFailure&quot;:false,&quot;code&quot;:&quot;NotBlank&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.146">
+      <div class="step-ref passed">146</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.147">
+      <div class="step-ref passed">147</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;First name is required&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:149]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:149]</span>
+                <span class="scenario-name">Nombre con caracteres especiales</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>111</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:149]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:149]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:08.959 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.150">
+      <div class="step-ref passed">150</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.151">
+      <div class="step-ref passed">151</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.151">{
+&quot;cc&quot;: &quot;1111111111&quot;,
+&quot;idType&quot;: &quot;pasaporte&quot;,
+&quot;firstname&quot;: &quot;1234&quot;,
+&quot;lastname&quot;: &quot;Salas&quot;,
+&quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+&quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+&quot;country&quot;: &quot;USA&quot;,
+&quot;province&quot;: &quot;California&quot;,
+&quot;city&quot;: &quot;San Francisco&quot;,
+&quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+&quot;phone&quot;: &quot;123-456-7890&quot;,
+&quot;role&quot;: &quot;ROLE_USER&quot;,
+&quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.169">
+      <div class="step-ref passed">169</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">109</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.169">19:29:08.961 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 311
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;1234&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:09.069 response time in milliseconds: 107
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:08 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.170">
+      <div class="step-ref passed">170</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.171">
+      <div class="step-ref failed">171</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;First name must contain only letters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.171">19:29:09.071 classpath:udea/register/register.feature:171
+Then match response[*].defaultMessage contains &#39;First name must contain only letters&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: response[*].defaultMessage
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/register.feature:171
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:173]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:173]</span>
+                <span class="scenario-name">Apellido vacio</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>110</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:173]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:173]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:09.078 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.174">
+      <div class="step-ref passed">174</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.175">
+      <div class="step-ref passed">175</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.175">{
+&quot;cc&quot;: &quot;1111111111&quot;,
+&quot;idType&quot;: &quot;pasaporte&quot;,
+&quot;firstname&quot;: &quot;Esteban&quot;,
+&quot;lastname&quot;: &quot;&quot;,
+&quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+&quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+&quot;country&quot;: &quot;USA&quot;,
+&quot;province&quot;: &quot;California&quot;,
+&quot;city&quot;: &quot;San Francisco&quot;,
+&quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+&quot;phone&quot;: &quot;123-456-7890&quot;,
+&quot;role&quot;: &quot;ROLE_USER&quot;,
+&quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.193">
+      <div class="step-ref passed">193</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">109</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.193">19:29:09.081 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 309
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:09.187 response time in milliseconds: 106
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+[{&quot;codes&quot;:[&quot;NotBlank.personRegistrationDTO.lastname&quot;,&quot;NotBlank.lastname&quot;,&quot;NotBlank.java.lang.String&quot;,&quot;NotBlank&quot;],&quot;arguments&quot;:[{&quot;codes&quot;:[&quot;personRegistrationDTO.lastname&quot;,&quot;lastname&quot;],&quot;arguments&quot;:null,&quot;defaultMessage&quot;:&quot;lastname&quot;,&quot;code&quot;:&quot;lastname&quot;}],&quot;defaultMessage&quot;:&quot;Last name is required&quot;,&quot;objectName&quot;:&quot;personRegistrationDTO&quot;,&quot;field&quot;:&quot;lastname&quot;,&quot;rejectedValue&quot;:&quot;&quot;,&quot;bindingFailure&quot;:false,&quot;code&quot;:&quot;NotBlank&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.194">
+      <div class="step-ref passed">194</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.195">
+      <div class="step-ref passed">195</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;Last name is required&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:197]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:197]</span>
+                <span class="scenario-name">Apellido con caracteres especiales</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>112</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:197]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:197]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:09.193 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.198">
+      <div class="step-ref passed">198</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.199">
+      <div class="step-ref passed">199</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.199">{
+&quot;cc&quot;: &quot;1111111111&quot;,
+&quot;idType&quot;: &quot;pasaporte&quot;,
+&quot;firstname&quot;: &quot;Esteban&quot;,
+&quot;lastname&quot;: &quot;1234&quot;,
+&quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+&quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+&quot;country&quot;: &quot;USA&quot;,
+&quot;province&quot;: &quot;California&quot;,
+&quot;city&quot;: &quot;San Francisco&quot;,
+&quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+&quot;phone&quot;: &quot;123-456-7890&quot;,
+&quot;role&quot;: &quot;ROLE_USER&quot;,
+&quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.217">
+      <div class="step-ref passed">217</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">111</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.217">19:29:09.195 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 313
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;1234&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:09.304 response time in milliseconds: 108
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:08 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.218">
+      <div class="step-ref passed">218</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.219">
+      <div class="step-ref failed">219</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;Last name must contain only letters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.219">19:29:09.305 classpath:udea/register/register.feature:219
+Then match response[*].defaultMessage contains &#39;Last name must contain only letters&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: response[*].defaultMessage
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/register.feature:219
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:221]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:221]</span>
+                <span class="scenario-name">Email vacio</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>204</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[10:221]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[10:221]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:09.309 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.222">
+      <div class="step-ref passed">222</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.223">
+      <div class="step-ref passed">223</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.223">{
+&quot;cc&quot;: &quot;1111111111&quot;,
+&quot;idType&quot;: &quot;pasaporte&quot;,
+&quot;firstname&quot;: &quot;Esteban&quot;,
+&quot;lastname&quot;: &quot;Salas&quot;,
+&quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+&quot;mail&quot;: &quot;&quot;,
+&quot;country&quot;: &quot;USA&quot;,
+&quot;province&quot;: &quot;California&quot;,
+&quot;city&quot;: &quot;San Francisco&quot;,
+&quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+&quot;phone&quot;: &quot;123-456-7890&quot;,
+&quot;role&quot;: &quot;ROLE_USER&quot;,
+&quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.241">
+      <div class="step-ref passed">241</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">204</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.241">19:29:09.312 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 289
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:09.514 response time in milliseconds: 201
+1 &lt; 201
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:09 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 28
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+User registered successfully
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.242">
+      <div class="step-ref failed">242</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.242">19:29:09.514 classpath:udea/register/register.feature:242
+Then status 400
+status code was: 201, expected: 400, response time in milliseconds: 201, url: https://codefact.udea.edu.co/modulo-01/public/api/auth/register, response: 
+User registered successfully
+classpath:udea/register/register.feature:242
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.243">
+      <div class="step-ref skipped">243</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;Email should not be empty&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[11:245]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[11:245]</span>
+                <span class="scenario-name">Email sin dominio @dominio.com</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>108</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[11:245]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[11:245]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:09.519 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.246">
+      <div class="step-ref passed">246</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.247">
+      <div class="step-ref passed">247</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.247">{
+&quot;cc&quot;: &quot;1111111111&quot;,
+&quot;idType&quot;: &quot;pasaporte&quot;,
+&quot;firstname&quot;: &quot;Esteban&quot;,
+&quot;lastname&quot;: &quot;Salas&quot;,
+&quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+&quot;mail&quot;: &quot;esteban.salas&quot;,
+&quot;country&quot;: &quot;USA&quot;,
+&quot;province&quot;: &quot;California&quot;,
+&quot;city&quot;: &quot;San Francisco&quot;,
+&quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+&quot;phone&quot;: &quot;123-456-7890&quot;,
+&quot;role&quot;: &quot;ROLE_USER&quot;,
+&quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.265">
+      <div class="step-ref passed">265</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">108</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.265">19:29:09.520 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 302
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:09.627 response time in milliseconds: 107
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:09 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+[{&quot;codes&quot;:[&quot;Email.personRegistrationDTO.mail&quot;,&quot;Email.mail&quot;,&quot;Email.java.lang.String&quot;,&quot;Email&quot;],&quot;arguments&quot;:[{&quot;codes&quot;:[&quot;personRegistrationDTO.mail&quot;,&quot;mail&quot;],&quot;arguments&quot;:null,&quot;defaultMessage&quot;:&quot;mail&quot;,&quot;code&quot;:&quot;mail&quot;},[],{&quot;codes&quot;:[&quot;.*&quot;],&quot;defaultMessage&quot;:&quot;.*&quot;,&quot;arguments&quot;:null}],&quot;defaultMessage&quot;:&quot;Email should be valid&quot;,&quot;objectName&quot;:&quot;personRegistrationDTO&quot;,&quot;field&quot;:&quot;mail&quot;,&quot;rejectedValue&quot;:&quot;esteban.salas&quot;,&quot;bindingFailure&quot;:false,&quot;code&quot;:&quot;Email&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.266">
+      <div class="step-ref passed">266</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.267">
+      <div class="step-ref passed">267</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;Email should be valid&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[12:268]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[12:268]</span>
+                <span class="scenario-name">Fecha de nacimiento vacia</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>108</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[12:268]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[12:268]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:09.633 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.269">
+      <div class="step-ref passed">269</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.270">
+      <div class="step-ref passed">270</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.270">{
+&quot;cc&quot;: &quot;1111111111&quot;,
+&quot;idType&quot;: &quot;pasaporte&quot;,
+&quot;firstname&quot;: &quot;Esteban&quot;,
+&quot;lastname&quot;: &quot;Salas&quot;,
+&quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+&quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+&quot;country&quot;: &quot;USA&quot;,
+&quot;province&quot;: &quot;California&quot;,
+&quot;city&quot;: &quot;San Francisco&quot;,
+&quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+&quot;phone&quot;: &quot;123-456-7890&quot;,
+&quot;role&quot;: &quot;ROLE_USER&quot;,
+&quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.288">
+      <div class="step-ref passed">288</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">107</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.288">19:29:09.634 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 314
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:09.740 response time in milliseconds: 105
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:09 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.289">
+      <div class="step-ref passed">289</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.290">
+      <div class="step-ref failed">290</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;Birthdate must not be empty&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.290">19:29:09.741 classpath:udea/register/register.feature:290
+Then match response[*].defaultMessage contains &#39;Birthdate must not be empty&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: response[*].defaultMessage
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/register.feature:290
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[13:292]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[13:292]</span>
+                <span class="scenario-name">Fecha de nacimiento invalida - menor a 18 años</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>113</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[13:292]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[13:292]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:09.746 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.293">
+      <div class="step-ref passed">293</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.294">
+      <div class="step-ref passed">294</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.294">{
+&quot;cc&quot;: &quot;1111111111&quot;,
+&quot;idType&quot;: &quot;pasaporte&quot;,
+&quot;firstname&quot;: &quot;Esteban&quot;,
+&quot;lastname&quot;: &quot;1234&quot;,
+&quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+&quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+&quot;country&quot;: &quot;USA&quot;,
+&quot;province&quot;: &quot;California&quot;,
+&quot;city&quot;: &quot;San Francisco&quot;,
+&quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+&quot;phone&quot;: &quot;123-456-7890&quot;,
+&quot;role&quot;: &quot;ROLE_USER&quot;,
+&quot;birthdate&quot;: &quot;2010-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.312">
+      <div class="step-ref passed">312</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">111</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.312">19:29:09.747 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 313
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;1234&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;2010-10-15&quot;}
+
+19:29:09.857 response time in milliseconds: 108
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:09 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.313">
+      <div class="step-ref passed">313</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.314">
+      <div class="step-ref failed">314</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;Birthdate must be at least 18 years old&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.314">19:29:09.859 classpath:udea/register/register.feature:314
+Then match response[*].defaultMessage contains &#39;Birthdate must be at least 18 years old&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: response[*].defaultMessage
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/register.feature:314
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[14:316]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[14:316]</span>
+                <span class="scenario-name">Fecha de nacimiento invalida - mayor a la fecha actual</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>110</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[14:316]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[14:316]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:09.865 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.317">
+      <div class="step-ref passed">317</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.318">
+      <div class="step-ref passed">318</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.318">{
+&quot;cc&quot;: &quot;1111111111&quot;,
+&quot;idType&quot;: &quot;pasaporte&quot;,
+&quot;firstname&quot;: &quot;Esteban&quot;,
+&quot;lastname&quot;: &quot;1234&quot;,
+&quot;password&quot;: &quot;Aj_H|u4{p85v/!{3+kp&quot;,
+&quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+&quot;country&quot;: &quot;USA&quot;,
+&quot;province&quot;: &quot;California&quot;,
+&quot;city&quot;: &quot;San Francisco&quot;,
+&quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+&quot;phone&quot;: &quot;123-456-7890&quot;,
+&quot;role&quot;: &quot;ROLE_USER&quot;,
+&quot;birthdate&quot;: &quot;2030-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.336">
+      <div class="step-ref passed">336</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">109</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.336">19:29:09.867 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 313
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;1234&quot;,&quot;password&quot;:&quot;Aj_H|u4{p85v\/!{3+kp&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;2030-10-15&quot;}
+
+19:29:09.975 response time in milliseconds: 106
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:09 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.337">
+      <div class="step-ref passed">337</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.338">
+      <div class="step-ref failed">338</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response[*].defaultMessage contains &#39;Birthdate must be at most the current date minus 18 years&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.338">19:29:09.976 classpath:udea/register/register.feature:338
+Then match response[*].defaultMessage contains &#39;Birthdate must be at most the current date minus 18 years&#39;
+js failed:
+&gt;&gt;&gt;&gt;
+01: response[*].defaultMessage
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:9 Expected an operand but found *
+response[*].defaultMessage
+         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1825)
+
+classpath:udea/register/register.feature:338
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[15:340]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[15:340]</span>
+                <span class="scenario-name">Todos los datos diligenciados correctamente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>110</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[15:340]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[15:340]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://codefact.udea.edu.co/modulo-01/public/api/auth/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:29:09.980 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.341">
+      <div class="step-ref passed">341</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;register&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.342">
+      <div class="step-ref passed">342</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.342">{
+    &quot;cc&quot;: &quot;1111111111&quot;,
+    &quot;idType&quot;: &quot;pasaporte&quot;,
+    &quot;firstname&quot;: &quot;Esteban&quot;,
+    &quot;lastname&quot;: &quot;Salas&quot;,
+    &quot;password&quot;: &quot;Password1!&quot;,
+    &quot;mail&quot;: &quot;esteban.salas@example.com&quot;,
+    &quot;country&quot;: &quot;USA&quot;,
+    &quot;province&quot;: &quot;California&quot;,
+    &quot;city&quot;: &quot;San Francisco&quot;,
+    &quot;residence&quot;: &quot;123 Main St, Apt 4B&quot;,
+    &quot;phone&quot;: &quot;123-456-7890&quot;,
+    &quot;role&quot;: &quot;ROLE_USER&quot;,
+    &quot;birthdate&quot;: &quot;1985-10-15&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.360">
+      <div class="step-ref passed">360</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">110</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.360">19:29:09.981 request:
+1 &gt; POST https://codefact.udea.edu.co/modulo-01/public/api/auth/register
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 304
+1 &gt; Host: codefact.udea.edu.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;cc&quot;:&quot;1111111111&quot;,&quot;idType&quot;:&quot;pasaporte&quot;,&quot;firstname&quot;:&quot;Esteban&quot;,&quot;lastname&quot;:&quot;Salas&quot;,&quot;password&quot;:&quot;Password1!&quot;,&quot;mail&quot;:&quot;esteban.salas@example.com&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;province&quot;:&quot;California&quot;,&quot;city&quot;:&quot;San Francisco&quot;,&quot;residence&quot;:&quot;123 Main St, Apt 4B&quot;,&quot;phone&quot;:&quot;123-456-7890&quot;,&quot;role&quot;:&quot;ROLE_USER&quot;,&quot;birthdate&quot;:&quot;1985-10-15&quot;}
+
+19:29:10.090 response time in milliseconds: 108
+1 &lt; 400
+1 &lt; Server: nginx/1.14.1
+1 &lt; Date: Wed, 29 May 2024 00:29:09 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 79
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+Registration failed: Person with email esteban.salas@example.com already exists
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.361">
+      <div class="step-ref passed">361</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.362">
+      <div class="step-ref passed">362</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response == &#39;Registration failed: Person with email esteban.salas@example.com already exists&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
